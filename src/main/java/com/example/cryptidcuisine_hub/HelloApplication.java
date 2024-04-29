@@ -20,7 +20,7 @@ public class HelloApplication extends Application {
 
         // Aplicar el efecto de desenfoque al nodo contenedor
         root.setEffect(blur);
-        root.setStyle("-fx-background-color: rgba(128, 0, 32, 0.5);");
+        root.setStyle("-fx-background-color: rgba(0, 0, 0, 0.5);");//128, 0, 32, 0.5
 
         // Crear un JFXDecorator con la escena
         JFXDecorator decorator = new JFXDecorator(primaryStage, root);
