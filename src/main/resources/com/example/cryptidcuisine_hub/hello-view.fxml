@@ -1,16 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
-
 <?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.example.cryptidcuisine_hub.HelloController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
-</VBox>
+<Pane opacity="1" prefHeight="561.0" prefWidth="1030.0" style="-fx-background-color: #CBA135;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+         <children>
+            <ImageView fitHeight="596.0" fitWidth="998.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Mar.gif" />
+               </image>
+            </ImageView>
+            <Pane layoutX="315.0" opacity="1" prefHeight="562.0" prefWidth="715.0" style="-fx-background-color: #CBA135;">
+         <children>
+            <Text fill="#f3efe0" layoutX="147.0" layoutY="216.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CryptidCuisine" textAlignment="CENTER">
+               <font>
+                  <Font name="Dubai Bold" size="66.0" />
+               </font>
+            </Text>
+            <Text fill="#f3efe0" layoutX="279.0" layoutY="519.0" strokeType="OUTSIDE" strokeWidth="0.0" text="search for Auth™ divice" textAlignment="CENTER">
+               <font>
+                  <Font name="Dubai Regular" size="16.0" />
+               </font>
+            </Text>
+            <Text fill="#f3efe0" layoutX="266.0" layoutY="531.0" strokeType="OUTSIDE" strokeWidth="0.0" text="By autofilling, you agree to the terms." textAlignment="CENTER">
+               <font>
+                  <Font name="Dubai Regular" size="12.0" />
+               </font>
+               <style>
+                  -fx-background-color: #F3EFE0; /* Cambiar color de fondo del botón */
+                  -fx-text-fill: #CBA135; /* Cambiar color de la fuente del botón */
+               </style>
+            </Text>
+            <Button contentDisplay="CENTER" graphicTextGap="0.0" layoutX="261.0" layoutY="367.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="193.0" text="log in" textAlignment="CENTER">
+               <font>
+                  <Font name="Dubai Bold" size="48.0" />
+               </font>
+               <style>
+                  -fx-background-color: #F3EFE0; /* Cambiar color de fondo del botón */
+                  -fx-text-fill: #CBA135; /* Cambiar color de la fuente del botón */
+               </style>
+            </Button>
+            <TextField alignment="CENTER" layoutX="147.0" layoutY="253.0" prefHeight="47.0" prefWidth="412.0" promptText="token">
+               <font>
+                  <Font name="Dubai Bold" size="48.0" />
+               </font>
+               <style>
+                  -fx-background-color: #F3EFE0; /* Cambiar color de fondo del botón */
+                  -fx-text-fill: #CBA135; /* Cambiar color de la fuente del botón */
+               </style>
+            </TextField>
+
+         </children></Pane>
+            <Pane opacity=".8" prefHeight="563.0" prefWidth="315.0" style="-fx-background-color: #000000;">
+               <children>
+               </children></Pane>
+            <ImageView fitHeight="605.0" fitWidth="594.0" layoutX="-135.0" layoutY="-25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Logo.png" />
+               </image>
+            </ImageView>
+         </children></Pane>

@@ -2,42 +2,36 @@ package com.example.cryptidcuisine_hub;
 
 import com.jfoenix.controls.JFXDecorator;
 import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.effect.BoxBlur;
-import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
 public class HelloApplication extends Application {
 
+
+
     @Override
-    public void start(Stage primaryStage) {
-        // Crear un efecto de desenfoque
-        BoxBlur blur = new BoxBlur(5, 5, 3);
+    public void start(Stage primaryStage) throws Exception {
+        Parent root = FXMLLoader.load(getClass().getResource("hello-view.fxml"));
 
-        // Configurar la escena
-        StackPane root = new StackPane();
-        Scene scene = new Scene(root, 320, 240);
-
-        // Aplicar el efecto de desenfoque al nodo contenedor
-        root.setEffect(blur);
-        root.setStyle("-fx-background-color: rgba(0, 0, 0, 0.5);");//128, 0, 32, 0.5
-
-        // Crear un JFXDecorator con la escena
+        // FXDecorator con la escena
         JFXDecorator decorator = new JFXDecorator(primaryStage, root);
         decorator.setCustomMaximize(true); // Permitir maximizar/restaurar la ventana
         decorator.setStyle("-fx-background-color: black;"); // Establecer color de fondo de la barra de título
 
-        // Configurar la escena con el JFXDecorator
-        Scene decoratorScene = new Scene(decorator);
+        // Obtener las dimensiones de pantalla del dispositivo
+        double screenWidth = 1030.0;//javafx.stage.Screen.getPrimary().getVisualBounds().getWidth();
+        double screenHeight = 596.0;//javafx.stage.Screen.getPrimary().getVisualBounds().getHeight();
 
-        // Configurar la ventana principal
+        // Escena con el decorador
+        Scene decoratorScene = new Scene(decorator, screenWidth, screenHeight);
+        decoratorScene.setFill(javafx.scene.paint.Color.rgb(0, 0, 0, 0.2)); // Configurar la transparencia de la escena
+        // Configurar la escena
         primaryStage.setTitle("CriptidCuisine HUB");
         primaryStage.setScene(decoratorScene);
-
-        // Establecer la transparencia de la ventana
-        primaryStage.setOpacity(0.8);
-
-        // Mostrar la ventana
+        //primaryStage.setFullScreen(true);
+        //primaryStage.setOpacity(0.8);
         primaryStage.show();
     }
 
