@@ -11,6 +11,7 @@ module com.example.cryptidcuisine_hub {
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
     requires com.jfoenix;
+    requires java.desktop;
 
     opens com.example.cryptidcuisine_hub to javafx.fxml;
     exports com.example.cryptidcuisine_hub;
