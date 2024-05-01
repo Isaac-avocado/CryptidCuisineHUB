@@ -4,19 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="405b85f6-9112-4f58-913e-d312b55bc09f" name="Changes" comment="Login - workspace changes">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/cryptidcuisine_hub/Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/MROHOJ.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/cryptidcuisine_hub/deviceText.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/cryptidcuisine_hub/foundedDevice.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/cryptidcuisine_hub/panelsMain.fxml" afterDir="false" />
+    <list default="true" id="405b85f6-9112-4f58-913e-d312b55bc09f" name="Changes" comment="Proyecto incompleto(Faltan validaciones)">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/cryptidcuisine_hub/compromisedDevice.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/cryptidcuisine_hub/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/cryptidcuisine_hub/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/cryptidcuisine_hub/HelloController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/cryptidcuisine_hub/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/cryptidcuisine_hub/logIn.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/cryptidcuisine_hub/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/cryptidcuisine_hub/Controller.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,7 +131,7 @@
       <workItem from="1714281696339" duration="9582000" />
       <workItem from="1714449580438" duration="4525000" />
       <workItem from="1714481398807" duration="22839000" />
-      <workItem from="1714577964611" duration="20001000" />
+      <workItem from="1714577964611" duration="21000000" />
     </task>
     <task id="LOCAL-00001" summary="test1">
       <option name="closed" value="true" />
@@ -182,7 +173,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714530988983</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Proyecto incompleto(Faltan validaciones)">
+      <option name="closed" value="true" />
+      <created>1714602278601</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1714602278601</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -205,7 +204,8 @@
     <MESSAGE value="test2" />
     <MESSAGE value="Login - Terminado (no funcional)" />
     <MESSAGE value="Login - workspace changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Login - workspace changes" />
+    <MESSAGE value="Proyecto incompleto(Faltan validaciones)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Proyecto incompleto(Faltan validaciones)" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -6,11 +6,8 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Menu;
-import javafx.scene.control.MenuItem;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.stage.Stage;
-import javafx.scene.control.Button;
 import javafx.event.ActionEvent; // Importa ActionEvent de javafx.event
 import javafx.util.Duration;
 
@@ -22,8 +19,21 @@ public class Controller {
     public Menu log_out;
     public MenuItem quit;
     @FXML
-    private Button logInButton, searchDeviceText, cancelButton, continueButton;
+    private Button logInButton, searchDeviceText, cancelButton, continueButton, notMyAuth;
 
+    @FXML
+    private void notMyAuthClicked(ActionEvent event) {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("compromisedDevice.fxml"));
+            Parent newRoot = loader.load();
+            Scene newScene = new Scene(newRoot);
+            Stage stage = (Stage) notMyAuth.getScene().getWindow();
+            stage.setScene(newScene);
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
     @FXML
     private void quitButtonClicked(ActionEvent event) {
         Platform.exit();
@@ -31,15 +41,24 @@ public class Controller {
 
     @FXML
     private void logInButtonClicked(ActionEvent event) {
-        try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("panelsMain.fxml"));
-            Parent newRoot = loader.load();
-            Scene newScene = new Scene(newRoot);
-            Stage stage = (Stage) logInButton.getScene().getWindow();
-            stage.setScene(newScene);
-            stage.show();
-        } catch (IOException e) {
-            e.printStackTrace();
+        if (token.getText().equals("42")) {
+            try {
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("panelsMain.fxml"));
+                Parent newRoot = loader.load();
+                Scene newScene = new Scene(newRoot);
+                Stage stage = (Stage) logInButton.getScene().getWindow();
+                stage.setScene(newScene);
+                stage.show();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        } else {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Error");
+            alert.setHeaderText(null);
+            alert.setContentText("El token no es válido. Intenta pulsar el texto Search for Auth device :D");
+            alert.showAndWait();
+            System.out.println("El token no es válido.");
         }
     }
     @FXML

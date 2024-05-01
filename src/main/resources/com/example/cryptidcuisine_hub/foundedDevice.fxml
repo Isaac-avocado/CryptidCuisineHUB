@@ -43,7 +43,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Button fx:id="searchDeviceText" layoutX="262.0" layoutY="496.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="193.0" text="That is no my Auth™ device.">
+            <Button fx:id="notMyAuth" layoutX="262.0" layoutY="496.0" mnemonicParsing="false" onAction="#notMyAuthClicked" prefHeight="22.0" prefWidth="193.0" text="That is no my Auth™ device.">
                <font>
                   <Font name="Dubai Regular" size="12.0" />
                </font>

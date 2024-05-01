@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane opacity="1" prefHeight="561.0" prefWidth="1030.0" style="-fx-background-color: #F24822;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cryptidcuisine_hub.Controller">
+         <children>
+            <ImageView fitHeight="596.0" fitWidth="998.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Mar.gif" />
+               </image>
+            </ImageView>
+            <Pane layoutX="315.0" opacity="1" prefHeight="562.0" prefWidth="715.0" style="-fx-background-color: #F24822;">
+         <children>
+            <Text fill="#f3efe0" layoutX="99.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Follow the manual" textAlignment="CENTER">
+               <font>
+                  <Font name="Dubai Bold" size="66.0" />
+               </font>
+            </Text>
+            <Text fill="#f3efe0" layoutX="258.0" layoutY="526.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Deactivate any connection." textAlignment="CENTER">
+               <font>
+                  <Font name="Dubai Regular" size="18.0" />
+               </font>
+               <style>
+                  -fx-background-color: #F3EFE0; /* Cambiar color de fondo del botón */
+                  -fx-text-fill: #CBA135; /* Cambiar color de la fuente del botón */
+               </style>
+            </Text>
+            <Text fill="#f3efe0" layoutX="66.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Compromised device" textAlignment="CENTER">
+               <font>
+                  <Font name="Dubai Bold" size="66.0" />
+               </font>
+            </Text>
+            <Text fill="#f3efe0" layoutX="213.0" layoutY="374.0" strokeType="OUTSIDE" strokeWidth="0.0" text="section 42" textAlignment="CENTER">
+               <font>
+                  <Font name="Dubai Bold" size="66.0" />
+               </font>
+            </Text>
+            <Text fill="#f3efe0" layoutX="264.0" layoutY="540.0" strokeType="OUTSIDE" strokeWidth="0.0" style="&#10;               " text="This is not a test, you are at risk." textAlignment="CENTER">
+               <font>
+                  <Font name="Dubai Regular" size="14.0" />
+               </font>
+            </Text>
+
+         </children></Pane>
+            <Pane opacity=".8" prefHeight="563.0" prefWidth="315.0" style="-fx-background-color: #000000;">
+               <children>
+               </children></Pane>
+            <ImageView fitHeight="605.0" fitWidth="594.0" layoutX="-135.0" layoutY="-25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Logo.png" />
+               </image>
+            </ImageView>
+         </children></Pane>
