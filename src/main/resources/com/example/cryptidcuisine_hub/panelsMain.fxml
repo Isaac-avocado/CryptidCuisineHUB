@@ -47,16 +47,15 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
-<?import javafx.scene.paint.Color?>
 <?import javafx.scene.text.Font?>
 
 <VBox prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #f3efe0;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cryptidcuisine_hub.Controller">
   <children>
-    <MenuBar fx:id="menu_log_out" nodeOrientation="RIGHT_TO_LEFT" VBox.vgrow="NEVER">
+    <MenuBar fx:id="menu_log_out" nodeOrientation="RIGHT_TO_LEFT" style="-fx-background-color: #f3efe0;" VBox.vgrow="NEVER">
       <menus>
-        <Menu id="log_out" fx:id="log_out" mnemonicParsing="false"  text="log out">
+        <Menu id="log_out" fx:id="log_out" mnemonicParsing="false" style="-fx-background-color: #f3efe0;" text="log out">
           <items>
-            <MenuItem fx:id="quit" mnemonicParsing="false" onAction="#quitButtonClicked" text="Quit" />
+            <MenuItem fx:id="quit" mnemonicParsing="false" onAction="#quitButtonClicked" style="-fx-background-color: #f3efe0;" text="Quit" />
           </items>
         </Menu>
       </menus>
@@ -296,22 +295,54 @@
         <AnchorPane fx:id="orderPane" style="-fx-background-color: #000000;">
           <children>
             <Label alignment="CENTER" font="$x1" layoutX="14.0" layoutY="14.0" style="&#10;" text="Orden" textAlignment="CENTER" textFill="#f3efe0" wrapText="false" />
+                  <Label alignment="CENTER" layoutX="14.0" layoutY="46.0" style="&#10;" text="Nombre del platillo" textAlignment="CENTER" textFill="#f3efe0" wrapText="false">
+                     <font>
+                        <Font name="Dubai Bold" size="18.0" fx:id="x124" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="169.0" layoutY="50.0" style="&#10;" text="Precio" textAlignment="CENTER" textFill="#f3efe0" wrapText="false">
+                     <font>
+                        <Font name="Dubai Bold" size="14.0" fx:id="x1221121" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="35.0" layoutY="75.0" style="&#10;" text="Desc" textAlignment="CENTER" textFill="#f3efe0" wrapText="false">
+                     <font>
+                        <Font name="Dubai Bold" size="14.0" fx:id="x122131" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="14.0" layoutY="109.0" style="&#10;" text="Nombre del platillo" textAlignment="CENTER" textFill="#f3efe0" wrapText="false">
+                     <font>
+                        <Font name="Dubai Bold" size="18.0" fx:id="x1241" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="169.0" layoutY="113.0" style="&#10;" text="Precio" textAlignment="CENTER" textFill="#f3efe0" wrapText="false">
+                     <font>
+                        <Font name="Dubai Bold" size="14.0" fx:id="x12211211" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="35.0" layoutY="138.0" style="&#10;" text="Desc" textAlignment="CENTER" textFill="#f3efe0" wrapText="false">
+                     <font>
+                        <Font name="Dubai Bold" size="14.0" fx:id="x1221311" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="14.0" layoutY="505.0" style="&#10;" text="Total" textAlignment="CENTER" textFill="#f3efe0" wrapText="false">
+                     <font>
+                        <Font name="Dubai Bold" size="18.0" fx:id="x12411" />
+                     </font>
+                  </Label>
           </children>
         </AnchorPane>
       </items>
     </SplitPane>
     <HBox id="HBox" alignment="CENTER_LEFT" spacing="5.0" style="-fx-background-color: #F3EFE0;" VBox.vgrow="NEVER">
       <children>
-        <Label maxHeight="1.7976931348623157E308" maxWidth="-1.0" text="UNCODE COMPANY" HBox.hgrow="ALWAYS">
+        <Label maxHeight="1.7976931348623157E308" maxWidth="-1.0" text="CLIENTE : NOMBRE" HBox.hgrow="ALWAYS">
           <font>
-            <Font size="11.0" fx:id="x3" />
+            <Font name="Dubai Bold" size="11.0" fx:id="x3" />
           </font>
-          <textFill>
-            <Color red="0.625" green="0.625" blue="0.625" fx:id="x4" />
-          </textFill>
         </Label>
         <Pane prefHeight="-1.0" prefWidth="-1.0" HBox.hgrow="ALWAYS" />
-        <Label font="$x3" maxWidth="-1.0" text="ESP" textFill="$x4" HBox.hgrow="NEVER" />
+        <Label font="$x3" maxWidth="-1.0" text="ESP" HBox.hgrow="NEVER" />
       </children>
       <padding>
         <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
