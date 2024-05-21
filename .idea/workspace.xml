@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="CryptidCuisine_LAST:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="405b85f6-9112-4f58-913e-d312b55bc09f" name="Changes" comment="Version final - maqueta sistema/ correccion de color">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
+    <list default="true" id="405b85f6-9112-4f58-913e-d312b55bc09f" name="Changes" comment=".JAR ADDED">
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/CryptidCuisine_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/CryptidCuisine_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CryptidCuisine_jar/jfo.jar" beforeDir="false" afterPath="$PROJECT_DIR$/JAR AQUI/CryptidCuisine.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,12 +69,13 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "Application.Application.executor": "Run",
     "Application.HelloApplication.executor": "Run",
+    "JAR Application.CryptidCuisine.jar.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/eliud/IdeaProjects/CryptidCuisine Hub/.idea/libraries/jfoenix-9.0.10.jar",
+    "last_opened_file_path": "C:/Users/eliud/IdeaProjects/CryptidCuisine Hub/JAR AQUI",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -78,7 +85,7 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.21264368",
     "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "preferences.JavaFX",
+    "settings.editor.selected.configurable": "project.propCompiler",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -89,7 +96,7 @@
   </component>
   <component name="RunManager">
     <configuration default="true" type="DjangoTestsConfigurationType">
-      <module name="jfo" />
+      <module name="CryptidCuisine" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -109,14 +116,18 @@
       <option name="OPTIONS" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="CryptidCuisine.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/JAR AQUI/CryptidCuisine.jar" />
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
-      <module name="jfo" />
+      <module name="CryptidCuisine" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="jfo" />
+      <module name="CryptidCuisine" />
       <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -146,7 +157,7 @@
       <method v="2" />
     </configuration>
     <configuration default="true" type="Python.FlaskServer">
-      <module name="jfo" />
+      <module name="CryptidCuisine" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -160,7 +171,7 @@
       <method v="2" />
     </configuration>
     <configuration default="true" type="Tox" factoryName="Tox">
-      <module name="jfo" />
+      <module name="CryptidCuisine" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -173,7 +184,7 @@
       <method v="2" />
     </configuration>
     <configuration default="true" type="docs" factoryName="Docutils task">
-      <module name="jfo" />
+      <module name="CryptidCuisine" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -191,7 +202,7 @@
       <method v="2" />
     </configuration>
     <configuration default="true" type="docs" factoryName="Sphinx task">
-      <module name="jfo" />
+      <module name="CryptidCuisine" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -208,6 +219,11 @@
       <option name="docutils_open_in_browser" value="false" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JAR Application.CryptidCuisine.jar" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -230,7 +246,8 @@
       <workItem from="1714481398807" duration="22839000" />
       <workItem from="1714577964611" duration="21986000" />
       <workItem from="1714702502198" duration="136000" />
-      <workItem from="1715731597000" duration="488000" />
+      <workItem from="1715731597000" duration="1358000" />
+      <workItem from="1716321370177" duration="4659000" />
     </task>
     <task id="LOCAL-00001" summary="test1">
       <option name="closed" value="true" />
@@ -296,7 +313,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714604068027</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary=".JAR ADDED">
+      <option name="closed" value="true" />
+      <created>1715732254505</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1715732254505</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -322,7 +347,8 @@
     <MESSAGE value="Proyecto incompleto(Faltan validaciones)" />
     <MESSAGE value="Validacion en Log in + sopresa NotMyAuth" />
     <MESSAGE value="Version final - maqueta sistema/ correccion de color" />
-    <option name="LAST_COMMIT_MESSAGE" value="Version final - maqueta sistema/ correccion de color" />
+    <MESSAGE value=".JAR ADDED" />
+    <option name="LAST_COMMIT_MESSAGE" value=".JAR ADDED" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
